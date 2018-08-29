@@ -1,0 +1,27 @@
+name: ethics
+
+channels:
+- !!python/unicode
+  'defaults'
+
+dependencies:
+- !!python/unicode
+  'openssl=1.0.2h=2'
+- !!python/unicode
+  'pip=8.1.2=py36_5'
+- !!python/unicode
+  'python=3.6.5'
+
+- brew:
+  - berkeley-db4
+
+- pip:
+  - bsddb3>=6.1.0
+  - gutenberg==0.7.0
+  - tensorflow==1.4.1
+  - tensorflow-tensorboard==0.4.0rc2
+  - keras==2.1.2
+  - numpy==1.13.3
+  - pandas==0.21.1
+
+prefix: !!python/unicode '/Users/mitchell/anaconda3/envs/ethics'
