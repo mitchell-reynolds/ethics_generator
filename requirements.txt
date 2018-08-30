@@ -1,2 +1,2 @@
-- pip:
-  - bsddb3>=6.1.0
+gutenberg==0.7.0
+bsddb3>=6.1.0

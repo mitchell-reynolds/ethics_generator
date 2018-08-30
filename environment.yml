@@ -19,7 +19,4 @@ dependencies:
 - !!python/unicode
   'zlib=1.2.11'
 
-- pip:
-  - gutenberg==0.7.0
-
 prefix: !!python/unicode '/Users/Mitchell/anaconda/envs/ethics'
