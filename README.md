@@ -16,7 +16,7 @@ This project uses [PyPI](https://pypi.python.org/pypi/Gutenberg), so I'd
 recommend that you just install everything from there using your favourite
 Python package manager.
 
-    pip install gutenberg
+    conda env create -f environment.yml
   
   
 Python 3
@@ -30,4 +30,4 @@ If you're not on a Mac, go directly to the [Gutenberg](https://pypi.org/project/
 On Mac, you can install BSD-DB using [homebrew](https://homebrew.sh/):
 
     brew install berkeley-db4
-    pip install -r requirements-py3.pip
+    pip install -r requirements.txt
