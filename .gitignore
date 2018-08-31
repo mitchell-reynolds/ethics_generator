@@ -18,3 +18,9 @@
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
+
+# exclude everything
+texts/*
+
+# exception to the rule
+!texts/.gitkeep
