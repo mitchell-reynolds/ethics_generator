@@ -1,13 +1,13 @@
-****************
 # Ethics Generator
-****************
+
 
 _With Motivation of the [Pioneer.app Tournament](https://pioneer.app/)_
 
 The aim of this project is to recreate various moral philosophers views. 
 With the rise of Artificial Intelligence, the impetus to translate human values into a machine-readable format has never been more necessary.
   
-The first moral philosopher to be pursued will be Immanuel Kant as I've extensively studied his ethics and find his arguments to compelling.
+The first moral philosopher to be pursued will be Immanuel Kant as I've extensively studied his ethics and 
+find his arguments to compelling.
 
 Installation
 ============
@@ -30,3 +30,17 @@ On Mac, you can install BSD-DB using [homebrew](https://homebrew.sh/):
 
     brew install berkeley-db4
     pip install -r requirements.txt
+
+Downloading Texts of Immanuel Kant
+----------------------------------
+
+The raw text data will go into the `texts` folder where it will be cleaned up further. 
+After running this, you should have an [`ethics.txt`](http://www.gutenberg.org/ebooks/5684) 
+and [`morals.txt`](http://www.gutenberg.org/ebooks/5682) file for his two major works in morality. The initial focus will be on his Morals text.
+
+    python download_kant.py
+
+Cleaning Data
+-------------
+
+TODO

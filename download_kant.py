@@ -17,5 +17,5 @@ def save(filename, contents):
     fh.write(contents)
     fh.close()
 
-save('morals.txt', morals)
-save('ethics.txt', ethics)
+save("morals.txt", morals)
+save("ethics.txt", ethics)
