@@ -36,7 +36,8 @@ Downloading Texts of Immanuel Kant
 
 The raw text data will go into the `texts` folder where it will be cleaned up further. 
 After running this, you should have an [`ethics.txt`](http://www.gutenberg.org/ebooks/5684) 
-and [`morals.txt`](http://www.gutenberg.org/ebooks/5682) file for his two major works in morality. The initial focus will be on his Morals text.
+and [`morals.txt`](http://www.gutenberg.org/ebooks/5682) for his two major works in morality. 
+The initial focus will be on his Morals text or "Fundamental Principles of the Metaphysic of Morals."
 
     python download_kant.py
 
