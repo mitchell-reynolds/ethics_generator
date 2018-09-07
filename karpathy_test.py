@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # data I/O
-data = open('./texts/morals.txt', 'r').read()  # should be simple plain text file
+data = open('./texts/raw/morals.txt', 'r').read()  # should be simple plain text file
 chars = list(set(data))
 data_size, vocab_size = len(data), len(chars)
 print('data has %d characters, %d unique.' % (data_size, vocab_size))

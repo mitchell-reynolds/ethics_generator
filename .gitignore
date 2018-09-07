@@ -24,3 +24,5 @@ texts/*
 
 # exception to the rule
 !texts/.gitkeep
+!texts/raw
+!texts/processed
