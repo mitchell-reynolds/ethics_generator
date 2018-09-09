@@ -9,6 +9,9 @@ With the rise of Artificial Intelligence, the impetus to translate human values 
 The first moral philosopher to be pursued will be Immanuel Kant as I've extensively studied his ethics and 
 find his arguments to compelling.
 
+My initial explorations rely on [Samir Bajaj's work](https://github.com/samirbajaj-zz/cs224n-project) with summarizing
+Shakespeare works. 
+
 Installation
 ============
 
@@ -44,4 +47,16 @@ The initial focus will be on his Morals text or "Fundamental Principles of the M
 Cleaning Data
 -------------
 
-TODO
+The `texts/processed` folder mirrors that of Bajaj's organization - ie the `processed` text file for morals has
+the removal of the preface to only include Kant's words & thoughts.
+
+`cd texts/processed`
+
+```
+for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done
+```
+```
+for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done
+```
+
+

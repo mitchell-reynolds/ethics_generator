@@ -21,6 +21,8 @@
 
 # exclude everything
 texts/*
+texts/processed/*
+texts/raw/*
 
 # exception to the rule
 !texts/.gitkeep
