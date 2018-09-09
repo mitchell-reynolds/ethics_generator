@@ -45,18 +45,28 @@ The initial focus will be on his Morals text or "Fundamental Principles of the M
     python download_kant.py
 
 Cleaning Data
--------------
+=============
 
 The `texts/processed` folder mirrors that of Bajaj's organization - ie the `processed` text file for morals has
-the removal of the preface to only include Kant's words & thoughts.
+the removal of the preface to only include Kant's words & thoughts. 
 
-`cd texts/processed`
+Run these commands in this order to create the full ethical `LEXICON` of Immanuel Kant.
 
-```
-for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done
-```
-```
-for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done
-```
+`cd texts/processed`  
+**lowercase all words**  
+```for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done```  
+**Remove punctuation**  
+```cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done```  
+**Move up in the directory and Remove stop words**  
+_If you use these scripts for other works, make sure to go into `remove_stop_words.py` to update the `book` name variable in `main()`_  
+```cd ../.. && python remove_stop_words.py```  
+**Stem Words**  
+```cd texts/remove_stop_words && for f in `ls *.txt`; do python ../../porter.py $f > ../stemmed/$f ; done```  
+**Create LEXICON**
+```cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON```
 
-
+TODO: 
+-----
+* Make `remove_stop_words.py` a command line utility
+* Keep "i.e." as these scripts remove punctuation and the stopword "I", therefore leaving a floating "e"
+* Remove numbers found in LEXICON version 1

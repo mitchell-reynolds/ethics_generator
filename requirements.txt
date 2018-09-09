@@ -14,6 +14,7 @@ MarkupSafe==1.0
 matplotlib==2.2.3
 mkl-fft==1.0.4
 mkl-random==1.0.1
+nltk==3.3
 numpy==1.15.1
 pyparsing==2.2.0
 python-dateutil==2.7.3
