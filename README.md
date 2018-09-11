@@ -55,6 +55,13 @@ The initial focus will be on his Morals text or "Fundamental Principles of the M
 
     python download_kant.py
 
+Modeling - Part 1
+=================
+
+This model is a vanilla Char-RNN that doesn't require the same level of cleaning as other models. 
+
+    python karpathy_test.py
+
 Cleaning Data
 =============
 
@@ -83,7 +90,7 @@ _If you use these scripts for other works, make sure to go into `remove_stop_wor
 #### Create LEXICON  
     cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON
 
-Modeling
+Modeling - Part 2
 ========
 
 _TODO & will be done by 9/16/18_
