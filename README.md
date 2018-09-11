@@ -47,7 +47,8 @@ The initial focus will be on his Morals text or "Fundamental Principles of the M
 Cleaning Data
 =============
 
-The `texts/processed` folder mirrors that of Bajaj's organization - ie the `processed` text file for morals has
+The `texts/processed` folder mirrors that of [Bajaj's](https://nlp.stanford.edu/courses/cs224n/2013/reports/bajaj.pdf) 
+organization - ie the `processed` text file for morals has
 the removal of the preface to only include Kant's words & thoughts. 
 
 Run these commands in this order to create the full ethical `LEXICON` of Immanuel Kant.
@@ -55,14 +56,18 @@ Run these commands in this order to create the full ethical `LEXICON` of Immanue
 `cd texts/processed`  
 **lowercase all words**  
 ```for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done```  
-**Remove punctuation**  
+
+**Remove punctuation.**  
 ```cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done```  
+
 **Move up in the directory and Remove stop words**  
 _If you use these scripts for other works, make sure to go into `remove_stop_words.py` to update the `book` name variable in `main()`_  
 ```cd ../.. && python remove_stop_words.py```  
+
 **Stem Words**  
 ```cd texts/remove_stop_words && for f in `ls *.txt`; do python ../../porter.py $f > ../stemmed/$f ; done```  
-**Create LEXICON**
+
+**Create LEXICON**  
 ```cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON```
 
 TODO: 
