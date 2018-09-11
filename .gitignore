@@ -21,6 +21,12 @@
 
 # exclude everything
 texts/*
+texts/raw/*
+texts/processed/*
+texts/lowercase/*
+texts/remove_punct/*
+texts/remove_stop_words/*
+texts/stemmed/*
 
 # exception to the rule
 !texts/.gitkeep
