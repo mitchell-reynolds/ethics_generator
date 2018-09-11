@@ -24,9 +24,9 @@ texts/*
 
 # exception to the rule
 !texts/.gitkeep
-!texts/raw/
-!texts/processed/
-!texts/lowercase/
-!texts/remove_punct/
-!texts/remove_stop_words/
-!texts/stemmed/
+!texts/raw/.gitkeep
+!texts/processed/.gitkeep
+!texts/lowercase/.gitkeep
+!texts/remove_punct/.gitkeep
+!texts/remove_stop_words/.gitkeep
+!texts/stemmed/.gitkeep
