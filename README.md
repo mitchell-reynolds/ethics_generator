@@ -64,23 +64,24 @@ the removal of the preface to only include Kant's words & thoughts.
 
 Run these commands in this order to create the full ethical `LEXICON` of Immanuel Kant.
 
-    `cd texts/processed`  
+    cd texts/processed
 
 #### lowercase all words  
-    ```for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done```  
+    for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done  
 
 #### Remove punctuation.  
-    ```cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done```  
+    cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done  
 
 #### Move up in the directory and Remove stop words  
 _If you use these scripts for other works, make sure to go into `remove_stop_words.py` to update the `book` name variable in `main()`_  
-    ```cd ../.. && python remove_stop_words.py```  
+    
+    cd ../.. && python remove_stop_words.py  
 
 #### Stem Words  
-    ```cd texts/remove_stop_words && for f in `ls *.txt`; do python ../../porter.py $f > ../stemmed/$f ; done```  
+    cd texts/remove_stop_words && for f in `ls *.txt`; do python ../../porter.py $f > ../stemmed/$f ; done  
 
 #### Create LEXICON  
-    ```cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON```
+    cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON
 
 Modeling
 ========
