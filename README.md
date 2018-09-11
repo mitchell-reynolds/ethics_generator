@@ -12,6 +12,17 @@ find his arguments to compelling.
 My initial explorations rely on [Samir Bajaj's work](https://github.com/samirbajaj-zz/cs224n-project) with summarizing
 Shakespeare works. 
 
+Feedback
+========
+
+As I'm participating in the [Pioneer.app Tournament](https://pioneer.app/), I've received really interesting feedback on this project.
+
+One important idea that I've received is how this project _should_ take in different cultures, genders, backgrounds etc.
+Although I agree with this sentiment, I believe certain core moral claims stand the test of time, culture, and backgrounds.
+
+If you'd like to explore feedback for this project, I encourage you to do so [here](./fellow_pioneers_feedback.md) for those who decide to train their own models
+based on various philosophers from various backgrounds. 
+
 Installation
 ============
 
