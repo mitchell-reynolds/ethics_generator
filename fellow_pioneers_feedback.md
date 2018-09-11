@@ -6,7 +6,7 @@ I'm very happy & grateful with the number of increasing votes week over week! **
 If you've voted for me, and you're reading this:
 
 ## THANK YOU!  
-_Note: I want us to __both__ be in the competition so please wait until after the competition to contact me as that violates the rules! ;)_
+_Note: I want us to __both__ be in the competition so please wait until after the competition to contact me as that violates the rules!_
 
 TODO: Write Weekly Feedback Summary; Overall Summary; My personal favorites; And responses to critiques 
 

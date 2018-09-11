@@ -11,7 +11,7 @@ ethics = strip_headers(load_etext(5684)).strip()
 
 def save(filename, contents):
 
-    name_and_folder = os.path.join("./texts/", filename)
+    name_and_folder = os.path.join("./texts/raw", filename)
 
     fh = open(name_and_folder, 'w')
     fh.write(contents)

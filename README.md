@@ -64,25 +64,35 @@ the removal of the preface to only include Kant's words & thoughts.
 
 Run these commands in this order to create the full ethical `LEXICON` of Immanuel Kant.
 
-`cd texts/processed`  
-**lowercase all words**  
-```for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done```  
+    `cd texts/processed`  
 
-**Remove punctuation.**  
-```cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done```  
+#### lowercase all words  
+    ```for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done```  
 
-**Move up in the directory and Remove stop words**  
+#### Remove punctuation.  
+    ```cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done```  
+
+#### Move up in the directory and Remove stop words  
 _If you use these scripts for other works, make sure to go into `remove_stop_words.py` to update the `book` name variable in `main()`_  
-```cd ../.. && python remove_stop_words.py```  
+    ```cd ../.. && python remove_stop_words.py```  
 
-**Stem Words**  
-```cd texts/remove_stop_words && for f in `ls *.txt`; do python ../../porter.py $f > ../stemmed/$f ; done```  
+#### Stem Words  
+    ```cd texts/remove_stop_words && for f in `ls *.txt`; do python ../../porter.py $f > ../stemmed/$f ; done```  
 
-**Create LEXICON**  
-```cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON```
+#### Create LEXICON  
+    ```cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON```
+
+Modeling
+========
+
+_TODO & will be done by 9/16/18_
 
 TODO: 
 -----
+* Write Gold Summary
+* Run Model 2
 * Make `remove_stop_words.py` a command line utility
-* Keep "i.e." as these scripts remove punctuation and the stopword "I", therefore leaving a floating "e"
+* Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
 * Remove numbers found in LEXICON version 1
+* Remove `.txt` files from `texts/*` files
+* Add Google Drive Photos
