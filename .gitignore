@@ -1,5 +1,6 @@
 # Compiled python code
 ~.pyc
+__pycache__/
 
 # Mac files
 .DS_Store
