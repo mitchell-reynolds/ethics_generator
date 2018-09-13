@@ -9,7 +9,7 @@ With the rise of Artificial Intelligence, the impetus to translate human values 
 The first moral philosopher to be pursued will be Immanuel Kant as I've extensively studied his ethics and 
 find his arguments to compelling.
 
-My initial explorations rely on [Samir Bajaj's work](https://github.com/samirbajaj-zz/cs224n-project) with summarizing
+My initial explorations rely on [Samir Bajaj's work](https://nlp.stanford.edu/courses/cs224n/2013/reports/bajaj.pdf)  with summarizing
 Shakespeare works. 
 
 Feedback
@@ -18,9 +18,12 @@ Feedback
 As I'm participating in the [Pioneer.app Tournament](https://pioneer.app/), I've received really interesting feedback on this project.
 
 One important idea that I've received is how this project _should_ take in different cultures, genders, backgrounds etc.
-Although I agree with this sentiment, I believe certain core moral claims stand the test of time, culture, and backgrounds.
+As of now, I believe focusing on one text by one philosopher within one normative ethical theory to be the best path for success
+within this tournament (ending at the end of September 2018). 
+I think adding various viewpoints to be a serious endeavor both in terms of time and in importance.
 
-If you'd like to explore feedback for this project, I encourage you to do so [here](./fellow_pioneers_feedback.md) for those who decide to train their own models
+If you'd like to explore feedback for this project, 
+I encourage you to do so [here](./fellow_pioneers_feedback.md) for those who decide to train their own models
 based on various philosophers from various backgrounds. 
 
 Installation
@@ -65,7 +68,7 @@ This model is a vanilla Char-RNN that doesn't require the same level of cleaning
 Cleaning Data
 =============
 
-The `texts/processed` folder mirrors that of [Bajaj's](https://nlp.stanford.edu/courses/cs224n/2013/reports/bajaj.pdf) 
+The `texts/processed` folder mirrors that of [Bajaj's](https://github.com/samirbajaj-zz/cs224n-project) 
 organization - ie the `processed` text file for morals has
 the removal of the preface to only include Kant's words & thoughts. 
 
@@ -97,7 +100,6 @@ _TODO & will be done by 9/16/18_
 
 TODO: 
 -----
-* Write Gold Summary
 * Run Model 2
 * Make `remove_stop_words.py` a command line utility
 * Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
