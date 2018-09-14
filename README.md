@@ -80,7 +80,7 @@ Run these commands in this order to create the full ethical `LEXICON` of Immanue
     for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done  
 
 #### Remove punctuation.  
-    cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,-]/ /g' | tr "'" " " > ../remove_punct/$f ; done  
+    cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,`*()-]/ /g' | tr "'" " " > ../remove_punct/$f ; done 
 
 #### Move up in the directory and Remove stop words  
 _If you use these scripts for other works, make sure to go into `remove_stop_words.py` to update the `book` name variable in `main()`_  
@@ -92,17 +92,28 @@ _If you use these scripts for other works, make sure to go into `remove_stop_wor
 
 #### Create LEXICON  
     cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON
+    
+#### Create TFIDF Docs
+    cd stemmed && for f in `ls *.txt`; do cat $f | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > ../term-frequencies/$f; done
+
+Then, delete the numbers and other symbols that aren't stemmed words in the `texts/term-frequencies/` files.  
+
+#### Create 
+    python df.py texts/term-frequencies/*.txt
+
+Executes but creates improper encoded text
 
 Modeling - Part 2
-========
+=================
 
 _TODO & will be done by 9/16/18_
 
 TODO: 
 -----
+* Find a way to _actually_ clean the TFIDF docs...
 * Run Model 2
 * Make `remove_stop_words.py` a command line utility
 * Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
 * Remove numbers found in LEXICON version 1
-* Remove `.txt` files from `texts/*` files
+* Remove all `.txt` files from `texts/*` directories
 * Add Google Drive Photos
