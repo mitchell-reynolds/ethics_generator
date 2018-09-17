@@ -5,6 +5,7 @@ _With Motivation of the [Pioneer.app Tournament](https://pioneer.app/)_
 
 The aim of this project is to recreate various moral philosophers views. 
 With the rise of Artificial Intelligence, the impetus to translate human values into a machine-readable format has never been more necessary.
+Also, the entire codebase is open source so that others may add to this ongoing research endeavor.  
   
 The first moral philosopher to be pursued will be Immanuel Kant as I've extensively studied his ethics and 
 find his arguments to compelling.
