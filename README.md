@@ -73,7 +73,10 @@ It created some interesting ethical claims / phrases:
 
 ![quotes](./images/kant_ml_quote-personal_fav.png)
 
-I'd recommend running for an hour to see what phrases you get from your philosopher. 
+It's not quite right, though... Some obvious grammar errors and made up words as this model goes character-by-character.
+The next models use a word-by-word and phrases-by-phrases approach that should output more meaningful claims.  
+
+_I'd recommend running for about an hour to see what phrases you get from your philosopher._ 
 
 Cleaning Data
 =============
@@ -128,9 +131,10 @@ _TODO & will be done by 9/24/18_
 
 TODO: 
 -----
-* Find a way to _actually_ clean the TFIDF docs...
+* `df.py` creates the wrong encoding as the original scripts were meant for py2.7 _not_ py3+
 * Run Modeling - Part 2
+* Add more philosophers from various backgrounds (culture, gender, race etc.)
 * Replace handwritten code with libraries
-* Make `remove_stop_words.py` a command line utility
+* Make `remove_stop_words.py` CLI
 * Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
 * Remove all `.txt` files from `texts/*` directories
