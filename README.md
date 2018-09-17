@@ -67,11 +67,11 @@ This model is a vanilla Char-RNN that doesn't require the same level of cleaning
 
 After running for 3 hours or 3 Million Iterations:
 
-<a href="http://googledrive.com/host/1iln_cRmu2ExTJJ7nYdAmQiogV6j98gor"><img src="https://drive.google.com/open?id=1iln_cRmu2ExTJJ7nYdAmQiogV6j98gor" style="width: 500px; max-width: 100%; height: auto" title="Model Ran for 3 hours" /></a>
+![Image](https://mitchell-reynolds.github.io/images/kant_graph.png)
 
-It created some interesting ethical claims:
+It created some interesting ethical claims / phrases:
 
-<a href="http://googledrive.com/host/1OQZw2Avrs7rWrvilngVLmAh7PUZMmy6a"><img src="http://googledrive.com/host/1OQZw2Avrs7rWrvilngVLmAh7PUZMmy6a" style="width: 500px; max-width: 100%; height: auto" title="Kantian Ethical Claims" /></a>
+![Image](https://mitchell-reynolds.github.io/images/kant_ml_quote-personal_fav.png)
 
 Cleaning Data
 =============
