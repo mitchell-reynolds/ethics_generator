@@ -68,15 +68,16 @@ This model is a vanilla Char-RNN that doesn't require the same level of cleaning
 After running for 3 hours or 3 Million Iterations:
 
 ![3_hours](./images/kant_graph.png)
+_Think of "Loss" as how well the model works in terms of error so you want it lower.
+I'd recommend running the above program for about an hour to see what phrases you get from your philosopher._ 
 
 It created some interesting ethical claims / phrases:
 
 ![quotes](./images/kant_ml_quote-personal_fav.png)
 
-It's not quite right, though... Some obvious grammar errors and made up words as this model goes character-by-character.
-The next models use a word-by-word and phrases-by-phrases approach that should output more meaningful claims.  
-
-_I'd recommend running for about an hour to see what phrases you get from your philosopher._ 
+It's not quite right, though... There's some obvious grammatical errors and made up words. 
+Model 1 goes character-by-character so it won't pick up grammar or general sentence structure too well.
+The next several models use a word-by-word and phrase-by-phrase approach that should output more meaningful claims.  
 
 Cleaning Data
 =============
@@ -87,10 +88,8 @@ the removal of the preface to only include Kant's words & thoughts.
 
 Run these commands in this order to create the full ethical `LEXICON` of Immanuel Kant.
 
-    cd texts/processed
-
 #### lowercase all words  
-    for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done  
+    cd texts/processed && for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done  
 
 #### Remove punctuation.  
     cd ../lowercase && for f in `ls *.txt`; do cat $f | sed 's/[:;?!.,`*()-]/ /g' | tr "'" " " > ../remove_punct/$f ; done 
