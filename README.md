@@ -67,7 +67,9 @@ This model is a vanilla Char-RNN that doesn't require the same level of cleaning
 
 After running for 3 hours or 3 Million Iterations:
 
-![3_hours](./images/kant_graph.png)
+![3_hours](./images/kant_graph.png)  
+
+
 _Think of "Loss" as how well the model works in terms of error so you want it lower.
 I'd recommend running the above program for about an hour to see what phrases you get from your philosopher._ 
 
