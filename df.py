@@ -27,7 +27,7 @@ def main(argv):
         df[w] = len(lexicon[w])
 
     # print df
-    with open('df.dat', 'wb') as out:
+    with open('df.dat', 'w') as out:
         pickle.dump(df, out)
 
 

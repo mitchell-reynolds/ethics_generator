@@ -34,8 +34,8 @@ class Summarizer(object):
 
     # tf is the frequency of a word in the document being summarized;
     # df is its frequency in the document collection (all 37 plays)
-    def initialize(self, tf_filename, df_filename="df.dat"):
-        with open(os.path.join(Summarizer.BASE_DIR, df_filename), 'r') as f:
+    def initialize(self, tf_filename, df_filename):
+        with open(os.path.join(Summarizer.BASE_DIR, df_filename), 'rb') as f:
             self.df = pickle.load(f)
 
         with open(tf_filename, 'r') as f:

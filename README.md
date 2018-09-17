@@ -98,7 +98,7 @@ _If you use these scripts for other works, make sure to go into `remove_stop_wor
 
 Then, delete the numbers and other symbols that aren't stemmed words in the `texts/term-frequencies/` files.  
 
-#### Create 
+#### Create Document Frequencies
     python df.py texts/term-frequencies/*.txt
 
 Executes but creates improper encoded text
@@ -106,14 +106,22 @@ Executes but creates improper encoded text
 Modeling - Part 2
 =================
 
+#### PageRank
+
+    cd texts/processed && for f in `ls *.txt`; do python ../../main.py -doc $f -tf ../term-frequencies/`echo $f | cut -d'.' -f1`.txt -df df.dat -alg pagerank > ../../summary/summary-pagerank/$f; done
+
+#### TF-IDF
+
+    for f in `ls *.txt`; do python ../../main.py -doc $f -tf ../term-frequencies/`echo $f | cut -d'.' -f1`.tf -df df.dat -alg tfidf > ../../summary/summary-tfidf/$f; done
+
 _TODO & will be done by 9/16/18_
 
 TODO: 
 -----
 * Find a way to _actually_ clean the TFIDF docs...
 * Run Model 2
+* Replace handwritten code with libraries
 * Make `remove_stop_words.py` a command line utility
 * Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
-* Remove numbers found in LEXICON version 1
 * Remove all `.txt` files from `texts/*` directories
 * Add Google Drive Photos
