@@ -67,11 +67,13 @@ This model is a vanilla Char-RNN that doesn't require the same level of cleaning
 
 After running for 3 hours or 3 Million Iterations:
 
-![Image](https://mitchell-reynolds.github.io/images/kant_graph.png)
+![3_hours](./images/kant_graph.png)
 
 It created some interesting ethical claims / phrases:
 
-![Image](https://mitchell-reynolds.github.io/images/kant_ml_quote-personal_fav.png)
+![quotes](./images/kant_ml_quote-personal_fav.png)
+
+I'd recommend running for an hour to see what phrases you get from your philosopher. 
 
 Cleaning Data
 =============
