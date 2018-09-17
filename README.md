@@ -17,6 +17,7 @@ Installation
 ============
 
 This project is in Python 3 and uses [Gutenberg](https://pypi.python.org/pypi/Gutenberg) to download text data.
+I use [Anaconda](https://www.anaconda.com/download/#macos) to manage Python dependencies.
 
     conda env create -f environment.yml
     conda activate ethics
