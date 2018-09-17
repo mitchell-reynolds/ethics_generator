@@ -61,9 +61,17 @@ The initial focus will be on his Morals text or "Fundamental Principles of the M
 Modeling - Part 1
 =================
 
-This model is a vanilla Char-RNN that doesn't require the same level of cleaning as other models. 
+This model is a vanilla Char-RNN that doesn't require the same level of cleaning as part 2. 
 
     python karpathy_test.py
+
+After running for 3 hours or 3 Million Iterations:
+
+<a href="https://drive.google.com/open?id=1iln_cRmu2ExTJJ7nYdAmQiogV6j98gor"><img src="https://drive.google.com/open?id=1iln_cRmu2ExTJJ7nYdAmQiogV6j98gor" style="width: 500px; max-width: 100%; height: auto" title="Model Ran for 3 hours" /></a>
+
+It created some interesting ethical claims:
+
+<a href="https://drive.google.com/open?id=1OQZw2Avrs7rWrvilngVLmAh7PUZMmy6a"><img src="https://drive.google.com/open?id=1OQZw2Avrs7rWrvilngVLmAh7PUZMmy6a" style="width: 500px; max-width: 100%; height: auto" title="Kantian Ethical Claims" /></a>
 
 Cleaning Data
 =============
@@ -98,13 +106,15 @@ _If you use these scripts for other works, make sure to go into `remove_stop_wor
 
 Then, delete the numbers and other symbols that aren't stemmed words in the `texts/term-frequencies/` files.  
 
-#### Create Document Frequencies
+#### Create Document Frequencies (executes but incorrect encoding)
     python df.py texts/term-frequencies/*.txt
 
-Executes but creates improper encoded text
+Found issue to be with Python 2.7 `pickle.dump()` output but Python 3 is different.
 
 Modeling - Part 2
 =================
+
+_TODO & will be done by 9/24/18_
 
 #### PageRank
 
@@ -114,14 +124,11 @@ Modeling - Part 2
 
     for f in `ls *.txt`; do python ../../main.py -doc $f -tf ../term-frequencies/`echo $f | cut -d'.' -f1`.tf -df df.dat -alg tfidf > ../../summary/summary-tfidf/$f; done
 
-_TODO & will be done by 9/16/18_
-
 TODO: 
 -----
 * Find a way to _actually_ clean the TFIDF docs...
-* Run Model 2
+* Run Modeling - Part 2
 * Replace handwritten code with libraries
 * Make `remove_stop_words.py` a command line utility
 * Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
 * Remove all `.txt` files from `texts/*` directories
-* Add Google Drive Photos
