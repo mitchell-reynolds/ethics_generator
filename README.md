@@ -12,20 +12,6 @@ find his arguments to compelling.
 My initial explorations rely on [Samir Bajaj's work](https://nlp.stanford.edu/courses/cs224n/2013/reports/bajaj.pdf)  with summarizing
 Shakespeare works. 
 
-Feedback
-========
-
-As I'm participating in the [Pioneer.app Tournament](https://pioneer.app/), I've received really interesting feedback on this project.
-
-One important idea that I've received is how this project _should_ take in different cultures, genders, backgrounds etc.
-As of now, I believe focusing on one text by one philosopher within one normative ethical theory to be the best path for success
-within this tournament (ending at the end of September 2018). 
-I think adding various viewpoints to be a serious endeavor both in terms of time and in importance.
-
-If you'd like to explore feedback for this project, 
-I encourage you to do so [here](./fellow_pioneers_feedback.md) for those who decide to train their own models
-based on various philosophers from various backgrounds. 
-
 Installation
 ============
 
@@ -129,6 +115,21 @@ _TODO & will be done by 9/24/18_
 #### TF-IDF
 
     for f in `ls *.txt`; do python ../../main.py -doc $f -tf ../term-frequencies/`echo $f | cut -d'.' -f1`.tf -df df.dat -alg tfidf > ../../summary/summary-tfidf/$f; done
+
+Feedback
+========
+
+As I'm participating in the [Pioneer.app Tournament](https://pioneer.app/), I've received really interesting feedback on this project.
+
+One important idea that I've received is how this project _should_ take in different cultures, genders, backgrounds etc.
+As of now, I believe focusing on one text by one philosopher within one normative ethical theory to be the best path for success
+within this tournament (ending at the end of September 2018). 
+I think adding various viewpoints to be a serious endeavor both in terms of time and in importance.
+
+If you'd like to explore feedback for this project, 
+I encourage you to do so [here](./fellow_pioneers_feedback.md) for those who decide to train their own models
+based on various philosophers from various backgrounds. 
+
 
 TODO: 
 -----
