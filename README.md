@@ -20,7 +20,7 @@ This project is in Python 3 and uses [Gutenberg](https://pypi.python.org/pypi/Gu
 I use [Anaconda](https://www.anaconda.com/download/#macos) to manage Python dependencies.
 
     conda env create -f environment.yml
-    conda activate ethics
+    source activate ethics
 
   
 Python 3
@@ -96,12 +96,12 @@ _If you use these scripts for other works, make sure to go into `remove_stop_wor
     cd ../.. && cat texts/stemmed/*.txt | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > LEXICON
     
 #### Create TFIDF Docs
-    cd stemmed && for f in `ls *.txt`; do cat $f | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > ../term-frequencies/$f; done
+    cd texts/stemmed && for f in `ls *.txt`; do cat $f | tr ' ' '\n' | sed '/^\s+$/d' | sort | uniq -c > ../term-frequencies/$f; done
 
 Then, delete the numbers and other symbols that aren't stemmed words in the `texts/term-frequencies/` files.  
 
 #### Create Document Frequencies (executes but incorrect encoding)
-    python df.py texts/term-frequencies/*.txt
+    cd ../.. && python df.py texts/term-frequencies/*.txt
 
 Found issue to be with Python 2.7 `pickle.dump()` output but Python 3 is different.
 
@@ -116,7 +116,7 @@ _TODO & will be done by 9/24/18_
 
 #### TF-IDF
 
-    for f in `ls *.txt`; do python ../../main.py -doc $f -tf ../term-frequencies/`echo $f | cut -d'.' -f1`.tf -df df.dat -alg tfidf > ../../summary/summary-tfidf/$f; done
+    for f in `ls *.txt`; do python ../../main.py -doc $f -tf ../term-frequencies/`echo $f | cut -d'.' -f1`.txt -df df.dat -alg tfidf > ../../summary/summary-tfidf/$f; done
 
 Feedback
 ========

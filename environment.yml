@@ -7,7 +7,7 @@ dependencies:
 - !!python/unicode
   'openssl=1.0.2n'
 - !!python/unicode
-  'pip=18.0'
+  'pip=10.0.1'
 - !!python/unicode
   'python=3.6.4'
 - !!python/unicode

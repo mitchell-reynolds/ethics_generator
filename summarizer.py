@@ -17,7 +17,7 @@ class Summarizer(object):
     """Abstract base class for all summarizers."""
 
     NUM_DOCS = 2
-    BASE_DIR = '/Users/Mitchell/pioneer/ethics_generator/'
+    BASE_DIR = os.path.dirname(__file__)
     stopwords = set( open( os.path.join(BASE_DIR, 'stop_words.txt'), 'r').read().strip().split(',') )
     word_re = re.compile('\w+') # drop trailing non-alphanumeric chars
     non_space = re.compile('\S+')
