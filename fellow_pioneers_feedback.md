@@ -1,7 +1,8 @@
 Pioneer.app Voting
 ==================
 
-I'm very happy & grateful with the number of increasing votes week over week! **9 &rarr; 13 &rarr; 18!**
+I'm very happy & grateful with the number of increasing votes (or ratio of votes) week over week! 
+**9 &rarr; 13 &rarr; 18 &rarr; 15!**
 
 If you've voted for me, and you're reading this:
 
@@ -16,8 +17,15 @@ Voting Format
 Each Pioneer is shown two anonymous applicants (A, B) where they "vote" on which one is better.
 Then, a prompt of "What did you like about the applicant you voted for?" with a capped length.
 
-Week 1
-------
+The last couple of weeks they've shown the number of upvotes and downvotes. 
+18:13 &rarr; 15:10 (increasing the ratio from 1.38:1 &rarr; 1.5:1)
+Therefore, my project was shown 31 &rarr; 25 times. 
+This decrease in the total number of votes strengthens (doesn't reliably prove by any means) 
+one of my personal hypotheses. 
+Namely, that the overall number of Pioneers _still_ participating in the tournament have decreased.
+
+Application Feedback
+--------------------
 
 Fellow Pioneers said this is ambitious and that they are interested in this idea as it's weird, crazy, different, relevant.  
 
@@ -37,7 +45,7 @@ on ethics & philosophy as opposed to "the ethics of machine learning."
 * "More inclined towards ethics n philosophy!"
 
 
-Week 2
+Week 1
 ------
 
 Fellow Pioneers were more critical this round, which I welcome. From the _Critiques_ section, the first comment
@@ -69,7 +77,7 @@ The funniest comment was the first comment in the _Motivating_ section.
 * "Love love the premise of your project!"
 
 
-Week 3
+Week 2
 ------
 
 From first comment in the _Questions_ section, it is similar to last weeks critique of having diverse set of moral philosophers. 
@@ -111,3 +119,33 @@ And, the second person voted for me twice thus showing they remembered me.
 * "applicant seems self aware."
 * "AI + ethics seems like a very cool idea."
 * "Really interesting project and love the way you let your inner critic know who is boss!"
+
+Week 3
+------
+
+What's really interesting about this week's feedback is that multiple people mentioned Kant.
+In the previous weeks, no one acknowledged him even though I had directly mentioned him. 
+I wonder if choosing Kant (over Bentham/Mill, Aristotle etc.) polarizes the Pioneer voters.
+As in, what if the Pioneer population doesn't prescribe to deontology? Or, Kant? Or, philosophy more generally?
+
+I've also been experimenting with _how_ I submit my weekly progress. This week I used bullet points for the first time.
+From Week 1 to now, I've experimented with the "Summary Sentence" as I recognize I instantly compare A and B based on their
+"Summary Sentence" 
+
+#### Motivating
+* "Fascinating project from a unique, world class builder. If I could give suggestion for philosophers: Zera Yacob, the stoics (Seneca, etc)" - galahad
+* "I can't decide which is more amazing: reading Kant in a week or summarizing it in 100 words!" - prendalearning
+* "Not only do you have an interesting idea/ product, but you also seem like a great person as well! Love effective altruism." - Art3mis
+#### Purely Positive (one exception)
+* "Wow! Good work. General AI doesn't feel to be too far away :)" - VC
+* "I think you are doing very well on your project. I hope you get a good result on your project." - chic0815
+* "Great idea!" - dumbledore-802321
+* "I liked how you use AI. I hope one day we are ruled by AI." - haydar
+* "The problem you are trying to solve is extremely interesting, and it seems like you understand balance!" - JohnTaylorTucker
+* "Ethics in AI is sorely needed ... " - Graham
+* "Kant is most ethical person we could ever find, at least heard of." - MichaelRoss
+* "Awesome technical project, loved seeing your code on github" - Santosh9000
+* "Curious to see where this project leads" - bradjasper
+* "Wow! I love your project and progresses! Keep it up! :-)" - ContinualAI.com
+* "Really interesting Machines to learn ethics" - Tochi
+* "Sounds better than the other but not particularly attainable" - akibet
