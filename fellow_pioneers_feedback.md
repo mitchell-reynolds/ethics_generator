@@ -2,7 +2,7 @@ Pioneer.app Voting
 ==================
 
 I'm very happy & grateful with the number of increasing votes (or ratio of votes) week over week! 
-**9 &rarr; 13 &rarr; 18 &rarr; 15!**
+**9 &rarr; 13 &rarr; 18 &rarr; 15 &rarr; 16!**
 
 If you've voted for me, and you're reading this:
 
@@ -17,12 +17,12 @@ Voting Format
 Each Pioneer is shown two anonymous applicants (A, B) where they "vote" on which one is better.
 Then, a prompt of "What did you like about the applicant you voted for?" with a capped length.
 
-The last couple of weeks they've shown the number of upvotes and downvotes. 
-18:13 &rarr; 15:10 (increasing the ratio from 1.38:1 &rarr; 1.5:1)
-Therefore, my project was shown 31 &rarr; 25 times. 
+The last few weeks they've shown the number of upvotes and downvotes. 
+18:13 &rarr; 15:10 &rarr; 16:10 (increasing the ratio from 1.38:1 &rarr; 1.5:1 &rarr; 1.6:1)
+Therefore, my project was shown 31 &rarr; 25 &rarr; 26 times. 
 This decrease in the total number of votes strengthens (doesn't reliably prove by any means) 
 one of my personal hypotheses. 
-Namely, that the overall number of Pioneers _still_ participating in the tournament have decreased.
+Namely, that the overall number of Pioneers _still_ participating in the tournament has decreased.
 
 Application Feedback
 --------------------
@@ -149,3 +149,38 @@ From Week 1 to now, I've experimented with the "Summary Sentence" as I recognize
 * "Wow! I love your project and progresses! Keep it up! :-)" - ContinualAI.com
 * "Really interesting Machines to learn ethics" - Tochi
 * "Sounds better than the other but not particularly attainable" - akibet
+
+Week 4
+------
+
+I wasn't able to fully decode the encoding problem found in the Stanford researcher's code. 
+It turns out the scripts Bajaj created breaks in Python 2.7 and in Python 3+ (even after using the `2to3` package).
+So, my progress didn't have a "WOW" factor. However, my ratio of upvotes did increase yet my rank fell.
+
+#### Motivating
+* "Programming can have a lot of nuanced issues. I like the github page description of your aims." - johannes
+* "I like the challenge of a ethical AI. Sam Harris's moral landscape might be useful reading." - killermann
+* "How do you measure something is ethical or not?" - mulan-yoda
+* "You have to learn the general theory of reflexivity to pre compile the bias AoT to train your data set." - Waterboy
+* "More focussed and determined. Trying to improve the product. Keep up the good show." - saurabhjindal
+* "Please, take a look at the Ethigs group from IEEE, Edson Prestes leads the group and they will be happy to help you!" - dt
+* "Applicant understand the importance of failure and learning from said experience. They are also demonstrating great progress." - Edward_W_Hood
+* "Impressive progress. I recommend dumbing down answers a little bit. Also tread carefully with AI 😬" - TheStateofFlow
+* "Although this could have some bias, given the different social and philosophical perspectives, the project seems amazing..." - jormax23
+* "Very cool. Please continue. Perhaps, when the time is right, partner with a designer who can help this be more accessible to the layman." - IslandsOfGenius
+
+#### Purely Positive
+* "AI with ethics, I love this. " - AIn_t_So_Bad
+* "Important project, please keep going!" - yowenti
+* "The applicant has really good idea! He/she still needs a long journey!" - chic0815
+* "let's build a better future!" - furiosa-253577
+* "Great effort. Don't give up" - 090909123
+* "Sounds interesting, keep it up!" - mirowtech
+
+Since you requested constructive feedback, here’s what voters said when they chose another applicant:
+
+* "The project is interesting but I can't tell from the description what its applications may be." - zelda-814465
+* "Great idea. Would appreciate greater progress & Github and a description that would make this project forkable by anyone " - AIrtemis
+* "Don't give up. Keep up the pace. All the best" - 090909123
+* "Really impressive! Like that you're doing open source work! Sorry couldn't vote but, I did the first star :) . Look at decaNLP, might help! " - pranjal  
+_Note: Applicants are not shown your gender during voting._ 

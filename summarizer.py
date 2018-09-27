@@ -18,7 +18,7 @@ class Summarizer(object):
 
     NUM_DOCS = 2
     BASE_DIR = os.path.dirname(__file__)
-    stopwords = set( open( os.path.join(BASE_DIR, 'stop_words.txt'), 'r').read().strip().split(',') )
+    stopwords = set( open(os.path.join(BASE_DIR, 'stop_words.txt'), 'r').read().strip().split(',') )
     word_re = re.compile('\w+') # drop trailing non-alphanumeric chars
     non_space = re.compile('\S+')
     non_alnum_ending = re.compile('\W$')
