@@ -1,8 +1,12 @@
-          FUNDAMENTAL PRINCIPLES OF THE METAPHYSIC OF MORALS
+                      FIRST SECTION
+
+
 
        TRANSITION FROM THE COMMON RATIONAL KNOWLEDGE
 
             OF MORALITY TO THE PHILOSOPHICAL
+
+
 
 Nothing can possibly be conceived in the world, or even out of it,
 which can be called good, without qualification, except a good will.
@@ -495,10 +499,17 @@ happens to it in its theoretic use; and in this case, therefore, as
 well as in the other, it will find rest nowhere but in a thorough
 critical examination of our reason.
 
+SEC_2
+
+                   SECOND SECTION
+
+
 
        TRANSITION FROM POPULAR MORAL PHILOSOPHY
 
             TO THE METAPHYSIC OF MORALS
+
+
 
 If we have hitherto drawn our notion of duty from the common use
 of our practical reason, it is by no means to be inferred that we have
@@ -2087,14 +2098,21 @@ critical examination of this faculty of reason. In the concluding
 section we shall give the principal outlines of this critical
 examination as far as is sufficient for our purpose.
 
+SEC_3
+
+                     THIRD SECTION
+
+
 
       TRANSITION FROM THE METAPHYSIC OF MORALS TO THE
 
            CRITIQUE OF PURE PRACTICAL REASON
 
 
+
 The Concept of Freedom is the Key that explains the Autonomy of
 the Will
+
 
 
 The will is a kind of causality belonging to living beings in so far

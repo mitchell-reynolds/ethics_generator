@@ -10,8 +10,9 @@ Also, the entire codebase is open source so that others may add to this ongoing 
 The first moral philosopher to be pursued will be Immanuel Kant as I've extensively studied his ethics and 
 find his arguments to compelling.
 
-My initial explorations rely on [Samir Bajaj's work](https://nlp.stanford.edu/courses/cs224n/2013/reports/bajaj.pdf)  with summarizing
-Shakespeare works. 
+My initial explorations relied on [Samir Bajaj's work](https://nlp.stanford.edu/courses/cs224n/2013/reports/bajaj.pdf)
+with summarizing Shakespeare works. 
+However, I've decided to rewrite the programs to be easily reusable by others.
 
 Installation
 ============
@@ -36,12 +37,12 @@ On Mac, you can install BSD-DB using [homebrew](https://homebrew.sh/):
     brew install berkeley-db4
     pip install -r requirements.txt
 
-Downloading Texts of Immanuel Kant
-----------------------------------
+Downloading all the Texts of Immanuel Kant from Gutenberg
+---------------------------------------------------------
 
 The raw text data will go into the `texts` folder where it will be cleaned up further. 
-After running this, you should have an [`ethics.txt`](http://www.gutenberg.org/ebooks/5684) 
-and [`morals.txt`](http://www.gutenberg.org/ebooks/5682) for his two major works in morality. 
+After running this, you should have an [`ethics.txt`](http://www.gutenberg.org/ebooks/5684), 
+[`morals.txt`](http://www.gutenberg.org/ebooks/5682) (his two major works in morality), and a couple other books. 
 The initial focus will be on his Morals text or "Fundamental Principles of the Metaphysic of Morals."
 
     python download_kant.py
@@ -78,6 +79,12 @@ the removal of the preface to only include Kant's words & thoughts.
 
 Run these commands in this order to create the full ethical `LEXICON` of Immanuel Kant.
 
+#### Manual Cleanup
+    cd texts/raw && cp *.txt ../processed/
+
+Once you run this command, you will have to manually clean up the texts by removing the preface
+and anything else not the author's translated words.
+
 #### lowercase all words  
     cd texts/processed && for f in `ls *.txt`; do cat $f | tr '[[:upper:]]' '[[:lower:]]' > ../lowercase/$f; done  
 
@@ -108,7 +115,7 @@ Found issue to be with Python 2.7 `pickle.dump()` output but Python 3 is differe
 Modeling - Part 2
 =================
 
-_TODO & will be done by 9/24/18_
+_TODO_
 
 #### PageRank
 
@@ -135,10 +142,10 @@ based on various philosophers from various backgrounds.
 
 TODO: 
 -----
-* `df.py` creates the wrong encoding as the original scripts were meant for py2.7 _not_ py3+
+* Make the cleanup scripts happen in one pass
+* Replace handwritten code with libraries
 * Run Modeling - Part 2
 * Add more philosophers from various backgrounds (culture, gender, race etc.)
-* Replace handwritten code with libraries
 * Make `remove_stop_words.py` CLI
 * Keep "i.e." as these scripts remove punctuation and the lowercased stopword "i", therefore leaving a floating "e"
 * Remove all `.txt` files from `texts/*` directories
